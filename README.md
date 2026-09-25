@@ -49,3 +49,4 @@ DATABASE_URL="$DATABASE_URL&uselibpqcompat=true" node connect/node.mjs
 ## Tutorials
 
 1. [Create a PostgreSQL database and connect from your laptop](https://blog.light-cloud.com/tutorials/create-a-postgres-database)
+2. [Browse and edit data in the data explorer](https://blog.light-cloud.com/tutorials/database-data-explorer)
