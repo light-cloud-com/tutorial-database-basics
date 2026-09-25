@@ -3,10 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "migrate": "node-pg-migrate up",
+    "start": "npm run migrate && node server.js"
   },
   "dependencies": {
     "express": "^5.1.0",
+    "node-pg-migrate": "^9.0.0",
     "pg": "^8.23.0"
   }
 }

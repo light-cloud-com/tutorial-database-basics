@@ -30,6 +30,17 @@ app.get("/books", async (req, res, next) => {
   }
 });
 
+app.get("/reviews", async (req, res, next) => {
+  try {
+    const { rows } = await pool.query(
+      "SELECT r.id, b.title, r.rating, r.body, r.created_at FROM reviews r JOIN books b ON b.id = r.book_id ORDER BY r.id"
+    );
+    res.json(rows);
+  } catch (err) {
+    next(err);
+  }
+});
+
 const port = Number(process.env.PORT) || 8080;
 const server = app.listen(port, () => console.log(`bookshop-api listening on ${port}`));
 
