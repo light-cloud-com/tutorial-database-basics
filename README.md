@@ -55,3 +55,4 @@ DATABASE_URL="$DATABASE_URL&uselibpqcompat=true" node connect/node.mjs
 5. [Import a SQL dump](https://blog.light-cloud.com/tutorials/import-a-sql-dump)
 6. [Rotate a database password](https://blog.light-cloud.com/tutorials/rotate-database-password)
 7. [Schema migrations on every deploy](https://blog.light-cloud.com/tutorials/database-migrations-in-deploys)
+8. [Too many connections? Size your pool](https://blog.light-cloud.com/tutorials/database-metrics-and-connections)
