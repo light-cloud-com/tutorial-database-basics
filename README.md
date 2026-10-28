@@ -1,5 +1,7 @@
 # Database basics on Light Cloud
 
+[![Deploy to Light Cloud](https://light-cloud.com/button.svg)](https://console.light-cloud.com/new?repo=https://github.com/light-cloud-com/tutorial-database-basics)
+
 Sample data and connection examples for the Light Cloud database tutorials. Each tutorial in the series builds on this small bookshop database.
 
 - `seed.sql` creates two tables, `authors` and `books`, with sample rows. It drops and recreates them, so you can run it again to reset.
